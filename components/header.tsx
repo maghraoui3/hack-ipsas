@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { GraduationCap } from "lucide-react";
+import { SignInButton, SignUpButton } from "@clerk/nextjs";
 
 const programs = [
   {
@@ -128,7 +129,7 @@ export function Header() {
         </NavigationMenu>
         <div className="ml-auto flex items-center space-x-4">
           <Button variant="outline" asChild>
-            <Link href="/login">Login</Link>
+            <SignUpButton /> 
           </Button>
           <Button className="bg-[#0B2C67] hover:bg-[#318CE7]" asChild>
             <Link href="/apply">Apply Now</Link>
