@@ -129,7 +129,7 @@ export function Header() {
         </NavigationMenu>
         <div className="ml-auto flex items-center space-x-4">
           <Button variant="outline" asChild>
-            <SignUpButton /> 
+            <SignUpButton fallbackRedirectUrl="/dashboardaftersignup" /> 
           </Button>
           <Button className="bg-[#0B2C67] hover:bg-[#318CE7]" asChild>
             <Link href="/apply">Apply Now</Link>

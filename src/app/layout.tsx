@@ -22,8 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider
+    publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
     signInFallbackRedirectUrl={process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL}
-    signUpFallbackRedirectUrl={process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL}>
+    signUpFallbackRedirectUrl="/dashboardaftersignup">
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider

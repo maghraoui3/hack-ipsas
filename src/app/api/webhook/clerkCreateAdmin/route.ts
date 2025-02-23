@@ -4,6 +4,7 @@ import { db } from '../../../../../lib/firebase';
 import { addDoc, collection } from 'firebase/firestore';
 import { headers } from 'next/headers';
 
+
 export async function POST(req: Request) {
   const payload = await req.json();
 
@@ -42,6 +43,7 @@ export async function POST(req: Request) {
       createdAt: created_at,
       role: 'user',
     });
+
 
     console.log('User created and stored in Firestore:', id);
   }

@@ -1,10 +1,11 @@
+import CreateUser from "@/components/CreateUser";
 
 
 export default function DashboardAdmin() {
 
     return (
         <div>
-            <h1>Dashboard Admin</h1>
+            <CreateUser />
         </div>
     )
 }
